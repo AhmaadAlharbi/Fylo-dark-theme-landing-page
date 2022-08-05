@@ -16,8 +16,10 @@
     <title>Fylo Website</title>
   </head>
   <body class="bg-darkBlue text-white font-opensans">
-    <header class="my-10 flex justify-between items-center px-4 md:px-10">
-      <div>
+    <header
+      class="my-10 flex flex-wrap justify-center md:justify-between items-center px-4 md:px-10"
+    >
+      <div class="mb-5">
         <img class="" src="images/logo-dark-mode.svg" alt="" />
       </div>
       <div class="flex space-x-8">
@@ -33,14 +35,34 @@
       </div>
     </header>
     <!-- hero   -->
-    <section #id="hero">
-      <div class="text-center flex flex-col justify-center items-center px-8">
+    <section id="hero" class="">
+      <!-- <header
+        class="my-5 flex flex-wrap justify-between items-center px-4 md:px-10"
+      >
+        <div>
+          <img class="" src="images/logo-dark-mode.svg" alt="" />
+        </div>
+        <div class="flex mx-auto mt-4 md:mt-0 space-x-8">
+          <div class="group">
+            <a href="">Feature</a>
+          </div>
+          <div class="group">
+            <a href="">Team</a>
+          </div>
+          <div class="group">
+            <a href="">Sign in</a>
+          </div>
+        </div>
+      </header> -->
+      <div
+        class="text-center relative flex flex-col justify-center items-center px-8"
+      >
         <!-- img container -->
-        <div class="mt-10">
+        <div class="my-10 mb-32">
           <img src="images/illustration-intro.png" alt="" />
         </div>
         <!-- text container -->
-        <div class="max-w-sm md:max-w-2xl mt-4 py-4">
+        <div class="max-w-sm md:max-w-2xl mt-4 py-4 pb-[50px] mb-20">
           <h1 class="my-4 text-3xl font-bold font-sans md:text-4xl">
             All your files in one secure location, assessible anywhere.
           </h1>
@@ -56,7 +78,9 @@
       </div>
     </section>
     <section id="feature">
-      <div class="flex flex-col justify- items-center px-8">
+      <div
+        class="bg-darkBlue1 flex flex-col py-10 mx-auto justify-center items-center px-8"
+      >
         <!-- features container -->
         <div
           class="grid grid-cols-1 my-5 py-10 gap-20 md:grid-cols-2 text-center"
@@ -104,7 +128,7 @@
     </section>
     <!-- stay productive -->
     <div
-      class="my-6 flex flex-col px-8 justify-center space-x-4 items-center md:flex-row"
+      class="flex flex-col bg-darkBlue1 py-20 px-8 justify-center space-x-4 items-center md:flex-row"
     >
       <!-- img container -->
       <div class="">
@@ -131,14 +155,20 @@
         ></a>
       </div>
     </div>
-    <section id="testimonials">
+    <section id="testimonials" class="relative">
       <div
-        class="flex my-10 md:px-4 flex-col justify-evenly space-y-8 md:space-y-0 md:space-x-2 items-center md:flex-row"
+        class="flex mx-7 pb-20 bg-darkBlue1 relative my-10 md:px-4 flex-col justify-center space-y-8 md:space-y-0 md:space-x-2 items-center md:flex-row"
       >
         <!-- 1 -->
         <div
           class="max-w-md px-4 py-6 bg-darkBlue3 rounded overflow-hidden shadow-lg"
         >
+          <img
+            class="absolute left-0 -top-[46px] lg:left-[200px]"
+            src="images/bg-quotes.png"
+            alt=""
+          />
+
           <div class="px-6 py-4">
             <p class="text-white text-base">
               Fylo has improved our team productivity by an order of magnitude.
@@ -193,9 +223,11 @@
           </div>
         </div>
       </div>
+    </section>
+    <footer class="bg-darkBlue2 relative">
       <!-- FORM -->
       <div
-        class="my-14 bg-darkBlue1 max-w-7xl rounded-xl mx-auto py-8 px-4 md:px-20 flex flex-col justify-center text-center"
+        class="my-14 absolute bottom-[249px] right-0 left-0 bg-darkBlue3 shadow-xl max-w-7xl rounded-xl mx-auto py-8 px-4 md:px-20 flex flex-col justify-center text-center"
       >
         <h3 class="text-2xl font-bold my-4">Get early access today</h3>
         <p class="">
@@ -218,10 +250,8 @@
           </button>
         </form>
       </div>
-    </section>
-    <footer class="bg-darkBlue">
       <div
-        class="flex flex-col flex-wrap px-10 py-14 justify-between items-start md:items-center md:flex-row space-x-8"
+        class="flex flex-col flex-wrap px-10 py-40 justify-between items-start md:items-end md:flex-row space-x-8"
       >
         <!-- 1st col -->
         <div class="px-6">

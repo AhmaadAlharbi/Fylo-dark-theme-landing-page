@@ -6,3 +6,20 @@
   filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
     brightness(105%) contrast(104%);
 }
+
+#hero {
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* #testimonials {
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 40px 1px;
+} */
+@media screen and (max-width: 640px) {
+  #feature {
+    background-image: url("../images/bg-curvy-desktop.svg");
+  }
+}
